@@ -159,6 +159,7 @@ Tasks that touch none of these (for example unrelated frontend work, authenticat
 ### Frontend Rules
 
 - **Frontend UI work:** Before implementation, read `web/AGENTS.md` and the global `shadcn-ui` skill. Explicit UI/UX design, review, or visual polish also uses global `impeccable`. The project-specific component reuse order, capability-gap requirement, theme, and verification rules are maintained in `web/AGENTS.md` and take priority over generic library guidance.
+- **React performance work:** Before performance-related React implementation or review, read the global `vercel-react-best-practices` skill. Apply rules that fit React, Rsbuild, and TanStack Query; project component and data-fetching conventions in `web/AGENTS.md` take priority. Do not introduce Next.js or SWR.
 - Use `bun` as the preferred package manager and script runner for the frontend (`web/`):
   - `bun install` for dependency installation
   - `bun run dev` for development server

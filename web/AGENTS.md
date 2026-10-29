@@ -117,7 +117,7 @@ UI/UX 设计、视觉打磨与审查使用全局 `impeccable`，管理后台按 
 
 ### 3.4 性能
 
-- **React**：合理使用 `useMemo`、`useCallback` 减少无效重渲染；避免在渲染路径中创建新对象/数组；必要时使用 `React.memo`。
+- **React**：性能相关实现与审查读取全局 `vercel-react-best-practices`，按实际 React、Rsbuild 与 TanStack Query 技术栈选用规则；组件复用与数据请求以本文约定为准，不引入 Next.js 或 SWR。
 - **代码分割**：使用 `React.lazy` 与动态 `import` 做按需加载，控制首屏与路由体积。
 - **资源**：图片选用合适格式与尺寸，大列表考虑虚拟滚动（如 @tanstack/react-virtual），大量图片考虑懒加载。
 
